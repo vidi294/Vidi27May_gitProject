@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">CloudConnectionNode</value>
+  <value name="node_subtype">unknown</value>
+  <value name="node_nsName">project.vidi27may_git.Vidi27May_gitProject.project_vidi27may_git_Vidi27May_gitProject_RESTConn1.connections:vidi</value>
+  <value name="node_pkg">Vidi27May_gitProject</value>
+  <value name="is_public">false</value>
+  <value name="cloudNodeVersion">1</value>
+  <record name="cloudNodeProperties" javaclass="com.wm.util.Values">
+    <number name="connectionNodeVersion" type="Integer">1</number>
+    <value name="connectorID">project.vidi27may_git.Vidi27May_gitProject.RESTConn1</value>
+    <value name="providerName">Vidi27May_gitProject</value>
+    <value name="providerConnectionType">sagcloud</value>
+    <record name="connectionGroupProperties" javaclass="com.wm.util.Values">
+      <value name="cn.providerUrl">https://ipaascle.int-aws-us.webmethods.io/integration/restv2/development/fla83b78f5a9c79e7b259715/vidi</value>
+      <value name="cn.retryCount">1</value>
+      <value name="cn.socketStaleCheck">true</value>
+      <value name="cn.tcpNoDelay">false</value>
+      <value name="cn.enableCompression">false</value>
+      <value name="cn.keepAliveInterval">-1</value>
+      <value name="cn.reuseAddr">false</value>
+      <value name="cn.sniServerName"></value>
+      <value name="cr.preemptiveAuthEnabled">false</value>
+      <value name="cn.enableSNI">true</value>
+      <value name="cn.socketLinger">-1</value>
+      <value name="cn.validateAfterInactivity">1000</value>
+      <value name="cn.readTimeout">30000</value>
+      <value name="cr.securityRealm"></value>
+      <value name="cn.sockBuffSize">8192</value>
+      <value name="cn.hostnameVerifier">org.apache.http.conn.ssl.DefaultHostnameVerifier</value>
+      <value name="cn.idleTimeout">-1</value>
+      <value name="cr.authSchemeType">basic</value>
+      <value name="cr.username">siqaadmin</value>
+      <value name="cn.retryIfRequestSentOk">true</value>
+      <value name="cn.connectTimeout">30000</value>
+      <value name="cr.password">project.vidi27may_git.Vidi27May_gitProject.project_vidi27may_git_Vidi27May_gitProject_RESTConn1.connections:vidi.cr.password</value>
+    </record>
+    <array name="passmanHandles" type="value" depth="1">
+      <value>project.vidi27may_git.Vidi27May_gitProject.project_vidi27may_git_Vidi27May_gitProject_RESTConn1.connections:vidi.cr.password</value>
+    </array>
+    <record name="connectionManagerProperties" javaclass="com.wm.util.Values">
+      <value name="expireTimeout">1000</value>
+      <value name="timeoutType">none</value>
+      <value name="minimumPoolSize">1</value>
+      <value name="blockTimeout">1000</value>
+      <value name="poolIncrementSize">1</value>
+      <value name="poolable">true</value>
+      <value name="startupBackoffSecs">10</value>
+      <value name="maximumPoolSize">10</value>
+      <value name="startupRetryCount">0</value>
+    </record>
+    <array name="formattableFields" type="value" depth="1">
+    </array>
+    <value name="connectionEnabled">true</value>
+  </record>
+</Values>
