@@ -7,21 +7,98 @@ packages:
   gitUrl: https://github.com/vidi294
   gitUsername: vidi294
   gitBranch: main
+- name: WmCloudStreams
+  version: 12.1.0
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
+services:
+- serviceName: project.vidi27may_git.Vidi27May_gitProject.project_vidi27may_git_Vidi27May_gitProject_RESTConn1.connections:vidi
+  packages:
+  - name: Vidi27May_gitProject
+    version: "1.0"
+  - name: WmCloudStreams
+    version: 12.1.0.0.69
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 configurationVariables:
   jdbc.SAP TxStore Pool.maxConns: "10"
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.cn.socketLinger
+  : "-1"
   jdbcfunc.SAPTxStore.failFastMode: false
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.timeoutType
+  : none
   jdbc.SAP TxStore Pool.poolThreshold: "0"
-  jdbc.SAP TxStore Pool.dbURL: jdbc:mysql://localhost:3306/SAPTRANSACTIONSTORE?useSSL=false&characterEncoding=utf-8&autoReconnect=true&maxReconnects=5&sessionVariables=wait_timeout=2147483
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.cn.tcpNoDelay
+  : "false"
   jdbc.SAP TxStore Pool.spyenabled: "false"
+  ? iscloudstreamsconnectorservice.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..operations..actions:getInvoiceGET1.virtualServiceName
+  : WmCloudStreams.RestVS
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.minimumPoolSize
+  : "1"
   jdbc.SAP TxStore Pool.useSSL: "false"
-  jdbc.SAP TxStore Pool.waitingThread: "10"
-  jdbc.SAP TxStore Pool.description: Connection Pool for the SAP Transaction Store
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.cn.sockBuffSize
+  : "8192"
   jdbc.SAP TxStore Pool.password: "{AES}nrGf3u7Wt20hFBGh5ZeEuQ=="
+  ? iscloudstreamsconnectorservice.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..operations..actions:getInvoiceGET1.connectionAlias
+  : $connectionAlias
   jdbc.SAP TxStore Pool.spyparms: SpyAttributes=(log=(file)logs/spy/SAP_TxStore_Pool.log;logTName=yes;timestamp=yes)
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.cn.socketStaleCheck
+  : "true"
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.cr.preemptiveAuthEnabled
+  : "false"
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.cn.keepAliveInterval
+  : "-1"
   jdbc.SAP TxStore Pool.snoopenabled: "false"
-  jdbc.SAP TxStore Pool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/SAP_TxStore_Pool.log;ddtdbg.ProtocolTraceShowTime=true
   jdbc.SAP TxStore Pool.expireTime: "60000"
   jdbc.SAP TxStore Pool.minConns: "5"
-  jdbc.SAP TxStore Pool.userid: root
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.cn.idleTimeout
+  : "-1"
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.blockTimeout
+  : "1000"
   jdbc.SAP TxStore Pool.driverAlias: MySQL CC Driver
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.cn.retryIfRequestSentOk
+  : "true"
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.cr.authSchemeType
+  : basic
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.connectionEnabled
+  : "true"
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.cn.hostnameVerifier
+  : org.apache.http.conn.ssl.DefaultHostnameVerifier
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.poolIncrementSize
+  : "1"
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.cn.reuseAddr
+  : "false"
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.expireTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.cn.connectTimeout
+  : "30000"
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.cn.readTimeout
+  : "30000"
+  jdbc.SAP TxStore Pool.dbURL: jdbc:mysql://localhost:3306/SAPTRANSACTIONSTORE?useSSL=false&characterEncoding=utf-8&autoReconnect=true&maxReconnects=5&sessionVariables=wait_timeout=2147483
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.cr.password
+  : "{AES}pbsiws51uXhiQAnolaXP0A=="
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.cn.providerUrl
+  : https://ipaascle.int-aws-us.webmethods.io/integration/restv2/development/fla83b78f5a9c79e7b259715/vidi
+  jdbc.SAP TxStore Pool.waitingThread: "10"
+  jdbc.SAP TxStore Pool.description: Connection Pool for the SAP Transaction Store
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.startupRetryCount
+  : "0"
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.maximumPoolSize
+  : "10"
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.cn.validateAfterInactivity
+  : "1000"
+  jdbc.SAP TxStore Pool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/SAP_TxStore_Pool.log;ddtdbg.ProtocolTraceShowTime=true
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.cr.username
+  : siqaadmin
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.startupBackoffSecs
+  : "10"
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.cn.enableCompression
+  : "false"
+  jdbc.SAP TxStore Pool.userid: root
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.cn.enableSNI
+  : "true"
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.poolable
+  : "true"
+  ? cloudstreamsconnection.project..vidi27may_git..Vidi27May_gitProject..project_vidi27may_git_Vidi27May_gitProject_RESTConn1..connections:vidi.cn.retryCount
+  : "1"
