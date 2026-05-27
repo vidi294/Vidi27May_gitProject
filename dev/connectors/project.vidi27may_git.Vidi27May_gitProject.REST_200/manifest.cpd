@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Connector-Key: project.vidi27may_git.Vidi27May_gitProject.REST_200
+Connector-Name: REST_200
+Connector-Version: 1.0
+Connector-Handler: com.webmethods.cloudstreams.metadata.handler.rest.Res
+ tConnectorMetadataHandler
+Connector-State: Enabled
+Connector-Bundle-Vendor: IBM
+Connector-Bundle-Version: 1.0
+Connector-Group-ID: project.vidi27may_git.Vidi27May_gitProject.REST
+Connector-Group-Version: 00
+Project: 
+
+Name: User-Defined
+Application-Version: 2.0
+applicationImageID: 
+
