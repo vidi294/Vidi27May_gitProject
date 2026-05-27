@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Connector-Key: project.vidi27may_git.Vidi27May_gitProject.RESTConn1
+Connector-Name: RESTConn1
+Connector-Version: 1.0
+Connector-Handler: com.webmethods.cloudstreams.metadata.handler.rest.Res
+ tConnectorMetadataHandler
+Connector-State: Enabled
+Connector-Bundle-Vendor: IBM
+Connector-Bundle-Version: 1.0
+Connector-Group-ID: project.vidi27may_git.Vidi27May
+Connector-Group-Version: itProject.RESTConn1
+Project: 
+
+Name: User-Defined
+Application-Version: 2.0
+applicationImageID: 
+

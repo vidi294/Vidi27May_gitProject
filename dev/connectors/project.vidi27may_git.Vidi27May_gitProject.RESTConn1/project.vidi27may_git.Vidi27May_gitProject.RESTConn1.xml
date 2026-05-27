@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rest-connector xmlns="http://www.webmethods.com/cloudstreams/metadata/handler/model" id="project.vidi27may_git.Vidi27May_gitProject.RESTConn1" version="1.0" name="RESTConn1" displayName="RESTConn1">
+    <connections>
+        <connection type="sagcloud" name="rESTConn1connection" displayName="rESTConn1connection">
+            <groups>
+                <group type="connection" name="connection" displayName="Connection">
+                    <description>Define the required connection configurations to initiate communication with the SaaS provider.</description>
+                    <fields>
+                        <field isRequired="false" isEncrypted="false" isHidden="false" isArray="false" defaultValue="https://ipaascle.int-aws-us.webmethods.io/integration/restv2/development/fla83b78f5a9c79e7b259715/vidi" name="cn.providerUrl" displayName="Server URL">
+                            <description>The native provider endpoint target for the connection configuration</description>
+                        </field>
+                    </fields>
+                </group>
+                <group type="credentials" name="credentials" displayName="Credentials">
+                    <fields/>
+                </group>
+            </groups>
+        </connection>
+    </connections>
+    <services>
+        <service xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="RESTServiceType" endpoint="${cn.providerUrl}" name="restconn1service" displayName="restconn1service">
+            <documentModel packageName="." nsName="project.vidi27may_git.Vidi27May_gitProject.RESTConn1.restconn1service.doctypes" useInlineModel="false"/>
+            <resources>
+                <mappings>
+                    <map context="IN" name="contentTypeHeader" displayName="Content-Type">
+                        <source type="LITERAL">application/json</source>
+                        <target type="HEADER">Content-Type</target>
+                    </map>
+                    <map context="OUT" name="contentTypeHeader" displayName="Content-Type">
+                        <source type="LITERAL">application/json</source>
+                        <target type="HEADER">Content-Type</target>
+                    </map>
+                    <map context="IN" name="acceptHeader" displayName="Accept">
+                        <source type="LITERAL">application/json</source>
+                        <target type="HEADER">Accept</target>
+                    </map>
+                </mappings>
+                <resource method="GET" path="/getInvoice" type="SIMPLE" tag="getInvoiceGET1" name="getInvoiceGET1" displayName="getInvoiceGET1">
+                    <mappings>
+                        <map isRequired="true" context="OUT" name="contentTypeHeader" displayName="Content-Type">
+                            <source type="LITERAL">application/json</source>
+                            <target type="HEADER">Content-Type</target>
+                        </map>
+                        <map isRequired="true" context="IN" name="acceptHeader" displayName="Accept">
+                            <source type="LITERAL">application/json</source>
+                            <target type="HEADER">Accept</target>
+                        </map>
+                    </mappings>
+                    <parameters/>
+                    <responses>
+                        <response name="get200getInvoiceGET1Response" code="200" messageFormatterType="application/octet+idataoref" builderType="application/json" documentRef="project.vidi27may_git.Vidi27May_gitProject.RESTConn1.restconn1service.doctypes:getInvoiceGETresponse1" excludeRoot="true" dimension="0"/>
+                        <response name="get401getInvoiceGET1Response" code="401" messageFormatterType="application/octet+idataoref" builderType="application/json" documentRef="project.vidi27may_git.Vidi27May_gitProject.RESTConn1.restconn1service.doctypes:csEmptyDoc" excludeRoot="true" dimension="0"/>
+                    </responses>
+                </resource>
+            </resources>
+        </service>
+    </services>
+</rest-connector>

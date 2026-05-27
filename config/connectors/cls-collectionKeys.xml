@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<services>
+    <cloudstreamsCollectionKeys serviceName="WmCloudStreams.RestVS">
+        <servicesKeys>
+            <keyDetails collectionKey="project.vidi27may_git.Vidi27May_gitProject.project_vidi27may_git_Vidi27May_gitProject_RESTConn1.operations.actions:getInvoiceGET1" connectorServiceName="project.vidi27may_git.Vidi27May_gitProject.project_vidi27may_git_Vidi27May_gitProject_RESTConn1.operations.actions:getInvoiceGET1"/>
+        </servicesKeys>
+    </cloudstreamsCollectionKeys>
+</services>

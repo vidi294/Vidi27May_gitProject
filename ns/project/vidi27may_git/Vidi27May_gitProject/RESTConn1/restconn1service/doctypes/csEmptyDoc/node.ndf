@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="record" javaclass="com.wm.util.Values">
+    <value name="node_nsName">project.vidi27may_git.Vidi27May_gitProject.RESTConn1.restconn1service.doctypes:csEmptyDoc</value>
+    <value name="node_pkg">Vidi27May_gitProject</value>
+    <value name="node_type">record</value>
+    <value name="field_type">record</value>
+  </record>
+</Values>
